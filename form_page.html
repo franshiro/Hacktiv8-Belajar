@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Page</title>
+</head>
+<body>
+    <div>
+            <h1>Buat Account Baru!</h1>
+            <h2>Sign Up Form</h2>
+    </div>
+    <div>
+        <form action="post">
+            <p>
+                <label for="first-name">First Name:</label><br>
+                <input type="text" name="firstname" id="first-name">
+            </p>
+            <p>
+                <label for="last-name">Last Name</label><br>
+                <input type="text" name="lastname" id="last-name">
+            </p>
+            <br>
+            <p>
+                <label for="gender">Gender:</label>
+                <br>
+                <input type="radio" name="gender" id="radio-male" value="male">
+                <label for="radio-male">Male</label>
+                <br>
+                <input type="radio" name="gender" id="radio-female" value="female">
+                <label for="radio-female">Female</label>
+                <br>
+                <input type="radio" name="gender" id="radio-other" value="other">
+                <label for="radio-other">Other</label>
+            </p>
+            <br>
+            <p>
+                <label for="negara">Nationality</label>
+                <br>
+                <datalist id="negaraLangs"></datalist>
+                    <select name="altNegaraLangs">
+                        <option value="indonesia">Indonesia</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="inggris">Inggris</option>
+                    </select>
+                </datalist>
+            </p>
+            <p>
+                <label for="bahasa">Language Spoken</label><br>
+                <input name="bahasa" type="checkbox" id="pilih-bahasa">
+                <label for="pilih-bahasa">Bahasa Indonesia</label><br>
+                <input type="checkbox" name="bahasa" id="pilih-bahasa">
+                <label for="pilih-bahasa">English</label><br>
+                <input type="checkbox" name="bahasa" id="pilih-bahasa">
+                <label for="pilih-bahasa">Other</label><br>
+
+            </p>
+            <p>
+                <label for="biografi">Bio</label><br>
+                <textarea name="bio" id="biografi" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <button>Sign Up</button>
+            </p>
+            
+        </form>
+    </div>
+    
+
+</body>
+</html>
